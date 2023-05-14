@@ -1,0 +1,53 @@
+#btnl{
+    position: absolute;
+    top: 55%;
+    right:42.20%;
+    width: 300px;
+    font-size: large;
+    height: 40px;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+   
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+ }
+ 
+ .txtl{
+    position: absolute;
+    top:30%;
+    left: 40%;
+ }
+ .inputBox1{
+    display: block;
+    position: absolute;
+    top: 40%;
+    right:40%;
+    margin: 25px;
+    font-size: 18px;
+    padding: 10px;
+    color: rgb(13, 14, 15);
+    border-radius: 10px;
+    width: 300px;
+    background-color: #d2c8c8;
+    border: none;
+    outline: none;
+}
+.inputBox2{
+    display: block;
+    position: absolute;
+    top: 30%;
+    right:40%;
+    margin: 25px;
+    font-size: 18px;
+    padding: 10px;
+    color: rgb(13, 14, 15);
+    border-radius: 10px;
+    width: 300px;
+    background-color: #ccbdbd;
+    border: none;
+    outline: none;
+}
