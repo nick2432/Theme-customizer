@@ -136,65 +136,68 @@ export default function Header(props) {
        className="svg_icons"
        /></button> 
        { change ? 
-    
-        <div id='base'
-        style={{backgroundColor:`${props.inputcolor}`,color:'#0000ff'}}
-        >
-          <button
-           className='list'
-           onClick={goto1}
-           type='button'
-           >
-            <div className='x1'>Default</div>
-             <div className='space'>
-             <span className='x' style={{backgroundColor:'#E9DEDE',color:'blue'}}></span>
-            <span className='x'style={{backgroundColor:'#fff'}}></span>
-            <span className='x'style={{backgroundColor:'#87CEEB'}}></span>
-            <span className='x' ></span>
-             </div>
-          </button>
+          
+          <div>
+            <div className='trangle' style={{borderBottomColor:`${props.inputcolor}`}}></div>
+            <div className='base'
+          style={{backgroundColor:`${props.inputcolor}`,color:'#0000ff'}}
+          >
+            <button
+             className='list'
+             onClick={goto1}
+             type='button'
+             >
+              <div className='x1'>Default</div>
+               <div className='space'>
+               <span className='x' style={{backgroundColor:'#E9DEDE',color:'blue'}}></span>
+              <span className='x'style={{backgroundColor:'#fff'}}></span>
+              <span className='x'style={{backgroundColor:'#87CEEB'}}></span>
+              <span className='x' ></span>
+               </div>
+            </button>
+          
+            <button
+             onClick={goto2}
+             className='list'
+             type='button'
+             >
+               <div className='x1'>Default</div>
+               <div className='space'>
+               <span className='x' style={{backgroundColor:'#0F0F34'}}></span>
+              <span className='x'style={{backgroundColor:'#0B0B13'}}></span>
+              <span className='x'style={{backgroundColor:'#87CEEB'}}></span>
+              <span className='x'style={{backgroundColor:'#313E59'}} ></span>
+               </div>
+            </button>
+            <button
+             onClick={goto3}
+             className='list'
+             type='button'
+             >
+               <div className='x1'>Default</div>
+               <div className='space'>
+               <span className='x' style={{backgroundColor:'#FEFF74'}}></span>
+              <span className='x'style={{backgroundColor:'#868628'}}></span>
+              <span className='x'style={{backgroundColor:'#224238'}}></span>
+              <span className='x' style={{backgroundColor:'#77D0ED'}}   ></span>
+               </div>
+            </button>
+            <button
+             onClick={goto7}
+             className='list'
+             type='button'
+             >
+               <div className='x11'>Customize</div>
+               <div className='space'>
+               <button className='xx' onClick={goto4} style={{backgroundColor:`${c1}`}}></button>
+              <button className='xx1' onClick={goto10}style={{backgroundColor:`${c4}`}}></button>
+              <button className='xx2' onClick={goto6} style={{backgroundColor:`${c3}`}}></button>
+              <button className='xx3'onClick={goto5} style={{backgroundColor:`${c2}`}}></button>
+               </div>
+            </button>
+          
+          </div></div>
         
-          <button
-           onClick={goto2}
-           className='list'
-           type='button'
-           >
-             <div className='x1'>Default</div>
-             <div className='space'>
-             <span className='x' style={{backgroundColor:'#0F0F34'}}></span>
-            <span className='x'style={{backgroundColor:'#0B0B13'}}></span>
-            <span className='x'style={{backgroundColor:'#87CEEB'}}></span>
-            <span className='x'style={{backgroundColor:'#313E59'}} ></span>
-             </div>
-          </button>
-          <button
-           onClick={goto3}
-           className='list'
-           type='button'
-           >
-             <div className='x1'>Default</div>
-             <div className='space'>
-             <span className='x' style={{backgroundColor:'#FEFF74'}}></span>
-            <span className='x'style={{backgroundColor:'#868628'}}></span>
-            <span className='x'style={{backgroundColor:'#224238'}}></span>
-            <span className='x' style={{backgroundColor:'#77D0ED'}}   ></span>
-             </div>
-          </button>
-          <button
-           onClick={goto7}
-           className='list'
-           type='button'
-           >
-             <div className='x11'>Customize</div>
-             <div className='space'>
-             <button className='xx' onClick={goto4} style={{backgroundColor:`${c1}`}}></button>
-            <button className='xx1' onClick={goto10}style={{backgroundColor:`${c4}`}}></button>
-            <button className='xx2' onClick={goto6} style={{backgroundColor:`${c3}`}}></button>
-            <button className='xx3'onClick={goto5} style={{backgroundColor:`${c2}`}}></button>
-             </div>
-          </button>
-          <div className='trangle' style={{borderBottomColor:`${props.inputcolor}`}}></div>
-        </div>
          
        :
        <div></div>

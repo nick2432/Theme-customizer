@@ -1,28 +1,7 @@
 
-#firstm2{
-    position: absolute;
-  
-    left: 40%;
-    bottom: 87%;
-    width: 100px;
-    font-size: large;
-    height: 20px;
-    padding: 15px;
-    font-size: 18px;
-    text-transform: capitalize;
-    background-color: rgb(246, 246, 246);
-    font-weight: bold;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    outline: none;
-    border: none;
-}
 .inputBox3{
     display: block;
-    position: absolute;
-    top: 90%;
-    right:40%;
+    margin-top: 10px;
     margin: 25px;
     font-size: 18px;
     padding: 10px;
@@ -32,7 +11,7 @@
     background-color: #010000;
     border: none;
     outline: none;
-    z-index: -1;
+   
 }
 #btn2{
     position: absolute;
@@ -52,114 +31,60 @@
     cursor: pointer;
  }
  #p{
-    position: absolute;
-    left: 40%;
-    bottom: 35%;
-    width: 250px;
+    max-width:50%;
+    min-width:150px;
+    padding:8px;
+    margin-bottom: 10px;
+    margin-left: 50%;
     font-size: large;
-    height: 50px;
-    padding: 15px;
-    font-size: 18px;
-    text-transform: capitalize;
-    background-color: rgb(246, 246, 246);
-    font-weight: bold;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    outline: none;
-    border: none;
+    float:  left;
+    clear: left;
  }
  #btn3{
-    position: absolute;
-    left: 56%;
-    bottom: 22px;
    border: none;
+   margin-top: 22.95px;
+   border-radius: 10px;
+   width: 50px;
+   height: 40px;
     cursor: pointer;
  }
-#firstm4{
-    position: absolute;
-    display: none;
-    left: 40%;
-    bottom: 75%;
-    width: 250px;
-    font-size: large;
-    height: 50px;
-    padding: 15px;
-    font-size: 18px;
-    text-transform: capitalize;
-    background-color: rgb(246, 246, 246);
-    font-weight: bold;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    outline: none;
-    border: none;
-}
-
-#firstm6{
-    position: absolute;
-    display: none;
-    left: 40%;
-    bottom: 60%;
-    width: 250px;
-    font-size: large;
-    height: 80px;
-    padding: 15px;
-    font-size: 18px;
-    text-transform: capitalize;
-    background-color: rgb(246, 246, 246);
-    font-weight: bold;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    outline: none;
-    border: none;
-}
-
-#firstm8{
-    position: absolute;
-    display: none;
-    left: 40%;
-    bottom: 51%;
-    width: 100px;
-    font-size: large;
-    height: 20px;
-    padding: 15px;
-    font-size: 18px;
-    text-transform: capitalize;
-    background-color: rgb(246, 246, 246);
-    font-weight: bold;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    outline: none;
-    border: none;
-}
+ .msgbox{
+    margin-top: -200px;
+ }
+ .sndmsg{
+   display: flex;
+   margin-left: 36%;
+    margin-top: 41%;
+ }
 #msg1{
-    
-    position: absolute;
-    color: aliceblue;
-    left: 41%;
-    bottom: 89%; 
+    max-width:50%;
+    min-width:150px;
+    display: none;
+    padding:8px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    font-size: large;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    float:  left;
+    clear: left;
 }
 #msg2{
-    display: none;
-    position: absolute;
-    color: aliceblue;
-    left: 41%;
-    bottom: 78%; 
+    max-width:50%;
+    min-width:150px;
+    padding:8px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    font-size: large;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    float:  left;
+    clear: left;
 }
-#msg3{
-    display: none;
-    position: absolute;
-    color: aliceblue;
-    left: 41%;
-    bottom: 62.57%; 
-}
-#msg4{
-    display: none;
-    position: absolute;
-    color: aliceblue;
-    left: 41%;
-    bottom: 53%; 
-}
+
+

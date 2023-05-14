@@ -7,7 +7,7 @@ export default function Chat(props) {
   const [ask, setask] = useState('')
   const navigate=useNavigate();
   const goto=()=>{
-    navigate('/login')
+    navigate('/')
   }
   const goto1=()=>{
     var div = document.getElementById('l');
@@ -17,53 +17,45 @@ export default function Chat(props) {
     p.textContent = ask;
     div.appendChild(p);
   }
- setTimeout(() => {
-  var div = document.getElementById('firstm4');
-  var div1 = document.getElementById('msg2');
-  div.style.display="inline-block";
-  div1.style.display="inline-block";
- }, 500);
- setTimeout(() => {
-  var div = document.getElementById('firstm6');
-  var div1 = document.getElementById('msg3');
-  div.style.display="inline-block";
-  div1.style.display="inline-block";
- }, 1200);
- setTimeout(() => {
-  var div = document.getElementById('firstm8');
-  var div1 = document.getElementById('msg4');
-  div.style.display="inline-block";
-  div1.style.display="inline-block";
- }, 1800);
+  useEffect(()=>{
+    setTimeout(() => {
+      var div1 = document.getElementById('msg1');
+      div1.style.display="inline-block";
+      div1.className='msg2';
+     }, 500);
+     setTimeout(() => {
+      var div1 = document.getElementById('msg1');
+      div1.style.display="inline-block";
+      div1.id='msg2';
+     }, 1000);
+     setTimeout(() => {
+      var div1 = document.getElementById('msg1');
+      div1.style.display="inline-block";
+      div1.id='msg2';
+     }, 1500);
+  },[])
+
   return (
+    <>
     <div id='l' style={{color:'#000'}}>
       <Imageupload/>
       <button id='btn2'
        type='button'onClick={goto} style={{backgroundColor:`${props.changecolor}`,color:`${props.txtcolor}`}}> <h className='txt'>Logout</h>
        </button>
-       <button id='btn3'
-       type='button' onClick={goto1}  style={{backgroundColor:`${props.inputcolor}`}} > <SendIcon/>
-       </button>
-       <input className='inputBox3'type='text'  style={{backgroundColor:`${props.inputcolor}`,color:`${props.txtcolor}`}} placeholder='Enter message' onChange={(e) => setask(e.target.value)}/>
-      
-      <div id='firstm2'style={{backgroundColor:`${props.inputcolor}`}} ></div>
-      <div>
-      <div id='msg1'>Hi there! 👋</div>
+      <div className='msgbox'>
+      <div id='msg2' style={{backgroundColor:`${props.inputcolor}`}} >Hi there! 👋</div>
+      <div id='msg1' style={{backgroundColor:`${props.inputcolor}`}} >I'm Wysa - an AI chatbot built by <div>therapists.</div></div>
+      <div id='msg1'style={{backgroundColor:`${props.inputcolor}`}} >I'm here to understand your <div>concerns and connect you</div> <div>with the best resources</div><div>available to support you.</div></div>
+      <div id='msg1' style={{backgroundColor:`${props.inputcolor}`}}>Can I help?</div>
       </div>
      
-      <div id='firstm4'style={{backgroundColor:`${props.inputcolor}`}} ></div>
-      <div>
-      <div id='msg2'>I'm Wysa - an AI chatbot built by <div>therapists.</div></div>
-      </div>
-      <div id='firstm6'style={{backgroundColor:`${props.inputcolor}`}}></div>
-      <div>
-      <div id='msg3'>I'm here to understand your <div>concerns and connect you</div> <div>with the best resources</div><div>available to support you.</div></div>
-      </div>
-      <div id='firstm8'style={{backgroundColor:`${props.inputcolor}`}} ></div>
-      <div>
-      <div id='msg4'>Can I help?</div>
-      </div>
     </div>
-    
+    <div className='sndmsg'>
+      <input className='inputBox3'type='text'  style={{backgroundColor:`${props.inputcolor}`,color:`${props.txtcolor}`}} placeholder='Enter message' onChange={(e) => setask(e.target.value)}/>
+      <button id='btn3'
+      type='button' onClick={goto1}  style={{backgroundColor:`${props.inputcolor}`}} > <SendIcon/>
+      </button>
+      </div>
+    </>
   )
 }
